@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransactionSecurityPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <action>
+        <block>false</block>
+        <endSession>true</endSession>
+        <freezeUser>false</freezeUser>
+        <notifications>
+            <inApp>true</inApp>
+            <sendEmail>true</sendEmail>
+            <user>test-0fb9rzriga3a@example.com</user>
+        </notifications>
+        <twoFactorAuthentication>false</twoFactorAuthentication>
+    </action>
+    <active>false</active>
+    <apexClass>ConcurrentSessionsPolicyCondition</apexClass>
+    <description>This policy restricts regular users to a maximum of five sessions and admin users to a single session. This reduces the opportunity of someone using another user's open but unattended session. No notifications are sent, but you can add them. Anyone reaching this limit is required to end an existing session before starting a new one. You can automate this with the Transaction Security preference setting to automatically close the user's oldest session.</description>
+    <developerName>ConcurrentSessionsLimitingPolicy</developerName>
+    <eventType>Login</eventType>
+    <executionUser>test-0fb9rzriga3a@example.com</executionUser>
+    <masterLabel>Concurrent User Session Limit Policy</masterLabel>
+    <resourceName>LoginHistory</resourceName>
+    <type>CustomApexPolicy</type>
+</TransactionSecurityPolicy>

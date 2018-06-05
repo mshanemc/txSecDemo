@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransactionSecurityPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <action>
+        <block>true</block>
+        <endSession>false</endSession>
+        <freezeUser>false</freezeUser>
+        <notifications>
+            <inApp>true</inApp>
+            <sendEmail>true</sendEmail>
+            <user>test-0fb9rzriga3a@example.com</user>
+        </notifications>
+        <twoFactorAuthentication>false</twoFactorAuthentication>
+    </action>
+    <active>false</active>
+    <apexClass>DataLoaderLeadExportCondition</apexClass>
+    <description>Enable this policy to receive notification when a user downloads more than 2,000 Lead objects within one second. Use this policy as a model for other policies to monitor similar data access limits.</description>
+    <developerName>LeadDataExportPolicy</developerName>
+    <eventType>DataExport</eventType>
+    <executionUser>test-0fb9rzriga3a@example.com</executionUser>
+    <masterLabel>Lead Data Export Policy</masterLabel>
+    <resourceName>Lead</resourceName>
+    <type>CustomApexPolicy</type>
+</TransactionSecurityPolicy>
