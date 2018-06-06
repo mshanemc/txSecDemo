@@ -7,7 +7,7 @@
         <notifications>
             <inApp>true</inApp>
             <sendEmail>true</sendEmail>
-            <user>test-0fb9rzriga3a@example.com</user>
+            <user>test-z2smzy6fbarp@example.com</user>
         </notifications>
         <twoFactorAuthentication>false</twoFactorAuthentication>
     </action>
@@ -16,7 +16,7 @@
     <description>Enable this policy to receive notification when a user downloads more than 2,000 Lead objects within one second. Use this policy as a model for other policies to monitor similar data access limits.</description>
     <developerName>LeadDataExportPolicy</developerName>
     <eventType>DataExport</eventType>
-    <executionUser>test-0fb9rzriga3a@example.com</executionUser>
+    <executionUser>test-z2smzy6fbarp@example.com</executionUser>
     <masterLabel>Lead Data Export Policy</masterLabel>
     <resourceName>Lead</resourceName>
     <type>CustomApexPolicy</type>
